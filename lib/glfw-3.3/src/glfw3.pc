@@ -1,0 +1,13 @@
+prefix=/nfs/2018/m/mchi/.brew
+exec_prefix=${prefix}
+includedir=/nfs/2018/m/mchi/.brew/include
+libdir=/nfs/2018/m/mchi/.brew/lib
+
+Name: GLFW
+Description: A multi-platform library for OpenGL, window and input
+Version: 3.3.0
+URL: https://www.glfw.org/
+Requires.private: 
+Libs: -L${libdir} -lglfw3
+Libs.private:  -framework Cocoa -framework IOKit -framework CoreFoundation -framework CoreVideo
+Cflags: -I${includedir}
